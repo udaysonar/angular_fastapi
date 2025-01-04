@@ -1,0 +1,26 @@
+<div class="guest-list-container">
+    <h1>Guest List</h1>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Contact Number</th>
+          <th>Check-in Date</th>
+          <th>Check-out Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="guests.length === 0">
+          <td colspan="5">No guests available</td>
+        </tr>
+        <tr *ngFor="let guest of guests">
+          <td>{{ guest.name }}</td>
+          <td>{{ guest.contact_number }}</td>
+          <td>{{ guest.check_in_date }}</td>
+          <td>{{ guest.check_out_date }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -169,3 +169,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+#venv files
+venv_angular_fastapi
+
+#node modules
+node_modules
